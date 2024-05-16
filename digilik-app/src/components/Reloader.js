@@ -25,13 +25,13 @@ const Reloader = () => {
         left: 0,
         width: "100%",
         height: "100%",
-        backgroundColor: "black",
+        backgroundColor: "rgba(0, 0, 0, 1)", // Fond noir transparent
         zIndex: 9999,
         textAlign: "center",
         flexDirection: "column",
         
       }} 
-      className="pt-24 h-full"
+      className="pt-72 pb-20 h-full"
     >
   <section>
   <div class="loading loading06">

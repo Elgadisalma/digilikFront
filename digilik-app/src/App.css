@@ -218,11 +218,12 @@
 
 /* common */
 .loading {
-  font-size: 100px;
+  font-size: 120px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   text-align: center;
   span {
+    letter-spacing: 0.5em;
     display: inline-block;
     margin: 0 -.05em;
   }
@@ -232,22 +233,17 @@
 .loading06 {
   span {
     position: relative;
-    color: rgba(#f6f6f6, .2);
+    color: #1970d4; 
     &::after {
       position: absolute;
       top: 0;
       left: 0;
       content: attr(data-text);
-      color: #080fed;
+      color: white;
       opacity: 0;
       transform: rotateY(-90deg);
       animation: loading06 4s infinite;
     }
-    /* @for $i from 1 through 6 {
-      &:nth-child(#{$i+1})::after {
-        animation-delay: #{$i*.2}s;
-      }
-    } */
   }
 }
 @keyframes loading06 {
