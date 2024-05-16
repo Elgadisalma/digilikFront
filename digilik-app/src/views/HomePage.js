@@ -32,20 +32,26 @@ export default function HomePage() {
               >
                 <div className="flex flex-wrap w-full justify-center ">
                   <div className="w-1/2">
-                  <h1 className="my-4 text-3xl md:text-5xl text-black opacity-75 font-bold leading-tight text-center md:text-left">
-                    Naviguer
-                    <span className="bg-clip-text pl-5 pr-5 text-transparent bg-gradient-to-r from-blue-400 via-blue-100 to-blue-300">
-                      dans le paysage
-                    </span>
-                    des affaires !!
-                  </h1>
-                  </div>
-                  <img src="/webdesign-agency.jpg" className="w-1/2" alt="Description de l'image" />
-                  {/* <p className="leading-normal text-base md:text-2xl mb-8 text-center md:text-left transition-transform transform hover:rotate-3">
-                    Sub-hero message, not too long and not too short. Make it just
-                    right!
-                  </p> */}
+                    <h1 className="my-4 text-3xl md:text-5xl text-black opacity-75 font-bold leading-tight text-center md:text-left">
+                      Naviguer
+                      <span className="bg-clip-text pl-5 pr-5 text-transparent bg-gradient-to-r from-blue-400 via-blue-100 to-blue-300">
+                        dans le paysage
+                      </span>
+                      des affaires !!
+                    </h1>
+                    <p className="mr-20 leading-normal text-gray-700 md:text-lg pt-10 text-center md:text-left transition-transform transform hover:rotate-1">
+                    DIGILIK est une agence spécialisée dans les métiers relatifs au digital. Elle diffère des agences web et des agences de communication, par sa particularité de réunir plusieurs disciplines et métiers en une seule structure totalement intégrée.
+                  </p>
 
+                  </div>
+                  <div className="w-1/2 ">
+                  <img
+                    src="/webdesign-agency.jpg"
+                    className="w-full rounded-3xl"
+                    alt="dimage"
+                  />
+                  </div>
+                  
                   {/* <form className="bg-gray-900 opacity-75 w-full shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4">
                     <div className="mb-4">
                       <label
@@ -72,6 +78,10 @@ export default function HomePage() {
                     </div>
                   </form> */}
                 </div>
+                <div className="pt-24 w-full h-10 rounded-2xl">
+                  <img src="/zigzag3.png" height={2} className="w-full rounded-lg" alt="Zigzag separator"/>
+                </div>
+
 
                 <div className="w-full xl:w-3/5 p-12 overflow-hidden">
                   {/* <div class="loader">

@@ -1,17 +1,15 @@
 import React from "react";
-import '../loader'
 
 export default function Navbar() {
   return (
     <>
-        <div id="de-preloader"></div>
 
-
-        <header className="shadow-lg h-24 hidden md:flex w-full container mx-auto flex justify-center gap-10">
+<header className="shadow-lg h-24 hidden md:flex w-full container mx-auto flex justify-center gap-10" style={{ backgroundColor: "#F2F2F2" }}>
         <a
           href="/"
-          className="border w-1/6 flex-shrink-0 flex items-center justify-center px-4 lg:px-6 xl:px-8 pr-10"
-        >
+          className=" w-1/6 flex-shrink-0 flex items-center justify-center px-4 lg:px-6 xl:px-8 pr-10">
+          <h1>digilik</h1>
+        
           {/* <img src="https://i.ibb.co/W6ZXdqN/2021-10-26-16h20-21.png" alt="" /> */}
         </a>
         <nav class="header-links contents font-semibold text-black lg:text-lg pl-10">
