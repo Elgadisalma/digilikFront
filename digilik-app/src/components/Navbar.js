@@ -8,7 +8,7 @@ export default function Navbar() {
         <a
           href="/"
           className=" w-1/6 flex-shrink-0 flex items-center justify-center px-4 lg:px-6 xl:px-8 pr-10">
-          <h1>digilik</h1>
+          <h1>DIGILIK</h1>
         
           {/* <img src="https://i.ibb.co/W6ZXdqN/2021-10-26-16h20-21.png" alt="" /> */}
         </a>
@@ -48,7 +48,7 @@ export default function Navbar() {
           <a href="/" className="mr-4 lg:mr-6 xl:mr-8">
             {/* Search icon */}
           </a>
-          <button className="bg-black hover:bg-blue-600 text-white font-bold px-4 xl:px-6 py-2 xl:py-3 rounded">
+          <button className="bg-transparent text-black ring-2 ring-black hover:ring-blue-600 hover:text-blue-600 font-bold px-4 xl:px-6 py-2 xl:py-3 rounded">
             Contact Me
           </button>
         </div>

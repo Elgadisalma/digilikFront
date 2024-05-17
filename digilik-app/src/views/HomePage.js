@@ -28,7 +28,7 @@ export default function HomePage() {
             {(ref) => (
               <div
                 ref={ref}
-                className="container pt-24 md:pt-36 mx-auto flex flex-wrap flex-col md:flex-row items-center"
+                className="container pt-20 mx-auto flex flex-wrap flex-col md:flex-row items-center"
               >
                 <div className="flex flex-wrap w-full justify-center ">
                   <div className="w-1/2">
@@ -78,8 +78,8 @@ export default function HomePage() {
                     </div>
                   </form> */}
                 </div>
-                <div className="pt-24 w-full h-10 rounded-2xl">
-                  <img src="/zigzag3.png" height={2} className="w-full rounded-lg" alt="Zigzag separator"/>
+                <div className="pt-20 w-full rounded-2xl">
+                  <img src="/zigzag3.png" height={1} className="w-full rounded-lg" alt="Zigzag separator"/>
                 </div>
 
 
