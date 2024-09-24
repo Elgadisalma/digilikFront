@@ -1,4 +1,6 @@
-export default function Home(props){
+import OwlCarousel from 'react-owl-carousel';
+
+export default function Home(){
     
     return(
         <>
@@ -65,7 +67,6 @@ export default function Home(props){
                         <a href="#home" className="nav-item nav-link active">Home</a>
                         <a href="#about-us" className="nav-item nav-link">About</a>
                         <a href="#choose-us" className="nav-item nav-link">Why Choose Us</a>
-                        <a href="contact.html" className="nav-item nav-link">Contact</a>
                     </div>
                     <button type="button" className="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal">
                         <i className="fa fa-search"></i>
@@ -277,21 +278,87 @@ export default function Home(props){
                     <h5 className="fw-bold text-primary text-uppercase">Our Services</h5>
                     <h1 className="mb-0">Custom IT Solutions for Your Successful Business</h1>
                 </div>
-                <div className="row g-5">
-                    <div className="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                        <div className="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                            <div className="service-icon">
-                                <i className="fa fa-shield-alt text-white"></i>
-                            </div>
-                            <h4 className="mb-3">Cyber Security</h4>
-                            <p className="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
-                            <a className="btn btn-lg btn-primary rounded" href="">
-                                <i className="bi bi-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                    {/* Répéter pour les autres éléments de service */}
-                </div>
+                <div class="row g-5">
+    {/* Service: Cyber Security */}
+    <div id="cyber-security" class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+        <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+            <div class="service-icon">
+                <i class="fa fa-shield-alt text-white"></i>
+            </div>
+            <h4 class="mb-3">Cyber Security</h4>
+            <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
+            <a class="btn btn-lg btn-primary rounded" href="">
+                <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    {/* Service: Data Analytics */}
+    <div id="data-analytics" class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+        <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+            <div class="service-icon">
+                <i class="fa fa-chart-pie text-white"></i>
+            </div>
+            <h4 class="mb-3">Data Analytics</h4>
+            <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
+            <a class="btn btn-lg btn-primary rounded" href="">
+                <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    {/* Service: Web Development */}
+    <div id="web-development" class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+        <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+            <div class="service-icon">
+                <i class="fa fa-code text-white"></i>
+            </div>
+            <h4 class="mb-3">Web Development</h4>
+            <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
+            <a class="btn btn-lg btn-primary rounded" href="">
+                <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    {/* Service: Apps Development */}
+    <div id="apps-development" class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+        <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+            <div class="service-icon">
+                <i class="fab fa-android text-white"></i>
+            </div>
+            <h4 class="mb-3">Apps Development</h4>
+            <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
+            <a class="btn btn-lg btn-primary rounded" href="">
+                <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    {/* Service: SEO Optimization */}
+    <div id="seo-optimization" class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+        <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+            <div class="service-icon">
+                <i class="fa fa-search text-white"></i>
+            </div>
+            <h4 class="mb3">SEO Optimization</h4>
+            <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
+            <a class="btn btn-lg btn-primary rounded" href="">
+                <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    {/* Section: Call Us For Quote */}
+    <div id="quote" class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+        <div class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-5">
+            <h3 class="text-white mb-3">Call Us For Quote</h3>
+            <p class="text-white mb-3">Clita ipsum magna kasd rebum at ipsum amet dolor justo dolor est magna stet eirmod</p>
+            <h2 class="text-white mb-0">+012 345 6789</h2>
+        </div>
+    </div>
+</div>
+
             </div>
         </div>
         {/* <!-- Service End --> */}
@@ -358,67 +425,71 @@ export default function Home(props){
         {/* <!-- Quote End --> */}
 
 
-        {/* <!-- Testimonial Start --> */}
-        <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div className="container py-5">
-                <div className="section-title text-center position-relative pb-3 mb-4 mx-auto" style={{ maxWidth: '600px' }}>
-                    <h5 className="fw-bold text-primary text-uppercase">Testimonial</h5>
-                    <h1 className="mb-0">What Our Clients Say About Our Digital Services</h1>
-                </div>
-                <div className="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
-            <div className="testimonial-item bg-light my-4">
-                <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                    <img className="img-fluid rounded" src="img/testimonial-1.jpg" style={{ width: '60px', height: '60px' }} />
-                    <div className="ps-4">
-                        <h4 className="text-primary mb-1">Client Name</h4>
-                        <small className="text-uppercase">Profession</small>
-                    </div>
-                </div>
-                <div className="pt-4 pb-5 px-5">
-                    Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-                </div>
-            </div>
-            <div className="testimonial-item bg-light my-4">
-                <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                    <img className="img-fluid rounded" src="img/testimonial-2.jpg" style={{ width: '60px', height: '60px' }} />
-                    <div className="ps-4">
-                        <h4 className="text-primary mb-1">Client Name</h4>
-                        <small className="text-uppercase">Profession</small>
-                    </div>
-                </div>
-                <div className="pt-4 pb-5 px-5">
-                    Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-                </div>
-            </div>
-            <div className="testimonial-item bg-light my-4">
-                <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                    <img className="img-fluid rounded" src="img/testimonial-3.jpg" style={{ width: '60px', height: '60px' }} />
-                    <div className="ps-4">
-                        <h4 className="text-primary mb-1">Client Name</h4>
-                        <small className="text-uppercase">Profession</small>
-                    </div>
-                </div>
-                <div className="pt-4 pb-5 px-5">
-                    Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-                </div>
-            </div>
-            <div className="testimonial-item bg-light my-4">
-                <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                    <img className="img-fluid rounded" src="img/testimonial-4.jpg" style={{ width: '60px', height: '60px' }} />
-                    <div className="ps-4">
-                        <h4 className="text-primary mb-1">Client Name</h4>
-                        <small className="text-uppercase">Profession</small>
-                    </div>
-                </div>
-                <div className="pt-4 pb-5 px-5">
-                    Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-                </div>
-            </div>
+   {/* Testimonial Start */}
+<div className="container-fluid py-5 wow fadeInUp d-flex" data-wow-delay="0.1s">
+   <div className="container py-5">
+   <div className="section-title text-center position-relative pb-3 mb-4 mx-auto" style={{ maxWidth: '600px' }}>
+      <h5 className="fw-bold text-primary text-uppercase">Testimonial</h5>
+      <h1 className="mb-0">What Our Clients Say About Our Digital Services</h1>
+    </div>
+    <div className="testimonial-carousel wow fadeInUp"  data-wow-delay="0.6s">
+       <div className="testimonial-item bg-light my-4">
+        <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+          <img className="img-fluid rounded" src="img/testimonial-1.jpg" style={{ width: '60px', height: '60px' }} alt="Client 1" />
+          <div className="ps-4">
+            <h4 className="text-primary mb-1">Client Name</h4>
+            <small className="text-uppercase">Profession</small>
+          </div>
         </div>
+        <div className="pt-4 pb-5 px-5">
+          Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam.
+        </div>
+      </div>
+    <div className="testimonial-item bg-light my-4">
+    
+         <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+          <img className="img-fluid rounded" src="img/testimonial-2.jpg" style={{ width: '60px', height: '60px' }} alt="Client 2" />
+          <div className="ps-4">
+            <h4 className="text-primary mb-1">Client Name</h4>
+            <small className="text-uppercase">Profession</small>
+          </div>
+        </div>
+        <div className="pt-4 pb-5 px-5">
+          Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam.
+        </div>
+      </div>
 
-            </div>
+      <div className="testimonial-item bg-light my-4">
+        <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+          <img className="img-fluid rounded" src="img/testimonial-3.jpg" style={{ width: '60px', height: '60px' }} alt="Client 3" />
+          <div className="ps-4">
+            <h4 className="text-primary mb-1">Client Name</h4>
+            <small className="text-uppercase">Profession</small>
+          </div>
         </div>
-        {/* <!-- Testimonial End --> */}
+        <div className="pt-4 pb-5 px-5">
+          Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam.
+        </div>
+      </div>
+      <div className="testimonial-item bg-light my-4">
+        <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+          <img className="img-fluid rounded" src="img/testimonial-4.jpg" style={{ width: '60px', height: '60px' }} alt="Client 4" />
+          <div className="ps-4">
+            <h4 className="text-primary mb-1">Client Name</h4>
+            <small className="text-uppercase">Profession</small>
+          </div>
+        </div>
+        <div className="pt-4 pb-5 px-5">
+          Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam.
+        </div>
+      </div>
+    </div> 
+  </div> 
+ 
+</div>
+{/* Testimonial End */}
+
+
 
 
         {/* <!-- Team Start --> */}
@@ -555,15 +626,13 @@ export default function Home(props){
         <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
             <div className="container py-5 mb-5">
                 <div className="bg-white">
-                    <div className="owl-carousel vendor-carousel">
+                <div class="vendor-carousel gap-5">
                         <img src="/img/vendor-1.jpg" alt="Vendor 1" />
-                        <img src="/img/vendor-2.jpg" alt="Vendor 2" />
                         <img src="/img/vendor-3.jpg" alt="Vendor 3" />
                         <img src="/img/vendor-4.jpg" alt="Vendor 4" />
                         <img src="/img/vendor-5.jpg" alt="Vendor 5" />
                         <img src="/img/vendor-6.jpg" alt="Vendor 6" />
                         <img src="/img/vendor-7.jpg" alt="Vendor 7" />
-                        <img src="/img/vendor-8.jpg" alt="Vendor 8" />
                         <img src="/img/vendor-9.jpg" alt="Vendor 9" />
                     </div>
                 </div>
