@@ -1,4 +1,7 @@
+import React from 'react';
 import OwlCarousel from 'react-owl-carousel';
+import CountUp from "react-countup";
+
 
 export default function Home(){
     
@@ -12,7 +15,7 @@ export default function Home(){
         {/* <!-- Spinner End --> */}
 
         {/* <!-- Topbar Start --> */}
-        <div className="container-fluid bg-dark px-5 d-none d-lg-block">
+        {/* <div className="container-fluid bg-dark px-5 d-none d-lg-block">
             <div className="row gx-0">
                 <div className="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
                     <div className="d-inline-flex align-items-center" style={{ height: '45px' }}>
@@ -50,14 +53,14 @@ export default function Home(){
                     </div>
                 </div>
             </div>
-        </div>
+        </div> */}
         {/* <!-- Topbar End --> */}
 
         {/* <!-- Navbar & Carousel Start --> */}
         <div className="container-fluid position-relative p-0">
             <nav className="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
                 <a href="index.html" className="navbar-brand p-0">
-                    <h1 className="m-0"><i className="fa fa-user-tie me-2"></i>Startup</h1>
+                    <h1 className="m-0"><i className="fa fa-user-tie me-2"></i>Digilik</h1>
                 </a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span className="fa fa-bars"></span>
@@ -65,7 +68,7 @@ export default function Home(){
                 <div className="collapse navbar-collapse" id="navbarCollapse">
                     <div className="navbar-nav ms-auto py-0">
                         <a href="#home" className="nav-item nav-link active">Home</a>
-                        <a href="#about-us" className="nav-item nav-link">About</a>
+                        <a href="#about-us" className="nav-item nav-link">A propos</a>
                         <a href="#choose-us" className="nav-item nav-link">Why Choose Us</a>
                     </div>
                     <button type="button" className="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal">
@@ -78,22 +81,22 @@ export default function Home(){
             <div id="header-carousel" className="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img className="w-100" src="/img/carousel-1.jpg" alt="Image" />
+                        <img className="w-100" src="/img/team-building.png" alt="Image" />
                         <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div className="p-3" style={{ maxWidth: '900px' }}>
-                                <h5 className="text-white text-uppercase mb-3 animated slideInDown">Creative & Innovative</h5>
-                                <h1 className="display-1 text-white mb-md-4 animated zoomIn">Creative & Innovative Digital Solution</h1>
+                                <h5 className="text-white text-uppercase mb-3 animated slideInDown">Business Excellence</h5>
+                                <h1 className="display-1 text-white mb-md-4 animated zoomIn">Naviguer dans le paysage des affaires</h1>
                                 <a href="quote.html" className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Free Quote</a>
                                 <a href="#" className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact Us</a>
                             </div>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img className="w-100" src="/img/carousel-2.jpg" alt="Image" />
+                        <img className="w-100" src="/img/digital-marketing-notepad-various-business-papers-brown-background_274234-4085-1920w.png" alt="Image" />
                         <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div className="p-3" style={{ maxWidth: '900px' }}>
-                                <h5 className="text-white text-uppercase mb-3 animated slideInDown">Creative & Innovative</h5>
-                                <h1 className="display-1 text-white mb-md-4 animated zoomIn">Creative & Innovative Digital Solution</h1>
+                                <h5 className="text-white text-uppercase mb-3 animated slideInDown">Business Growth</h5>
+                                <h1 className="display-1 text-white mb-md-4 animated zoomIn">Tracer sa voie en affaires</h1>
                                 <a href="quote.html" className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Free Quote</a>
                                 <a href="#" className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact Us</a>
                             </div>
@@ -181,10 +184,10 @@ export default function Home(){
                 <div className="row g-5">
                     <div className="col-lg-7">
                         <div className="section-title position-relative pb-3 mb-5">
-                            <h5 className="fw-bold text-primary text-uppercase">About Us</h5>
-                            <h1 className="mb-0">The Best IT Solution With 10 Years of Experience</h1>
+                            <h5 className="fw-bold text-primary text-uppercase">A propos de nous</h5>
+                            <h1 className="mb-0">La meilleure solution informatique avec 10 ans d'expérience</h1>
                         </div>
-                        <p className="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet.</p>
+                        <p className="mb-4">DIGILIK est une agence spécialisée dans les métiers relatifs au digital. Elle diffère des agences web et des agences de communication, par sa particularité de réunir plusieurs disciplines et métiers en une seule structure totalement intégrée.</p>
                         <div className="row g-0 mb-3">
                             <div className="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
                                 <h5 className="mb-3"><i className="fa fa-check text-primary me-3"></i>Award Winning</h5>
@@ -221,8 +224,8 @@ export default function Home(){
         <div id="choose-us" className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
             <div className="container py-5">
                 <div className="section-title text-center position-relative pb-3 mb-5 mx-auto" style={{ maxWidth: '600px' }}>
-                    <h5 className="fw-bold text-primary text-uppercase">Why Choose Us</h5>
-                    <h1 className="mb-0">We Are Here to Grow Your Business Exponentially</h1>
+                    <h5 className="fw-bold text-primary text-uppercase">Pourquoi Nous Choisir</h5>
+                    <h1 className="mb-0">Nous sommes là pour faire croître votre entreprise de manière exponentielle</h1>
                 </div>
                 <div className="row g-5">
                     <div className="col-lg-4">
@@ -231,15 +234,15 @@ export default function Home(){
                                 <div className="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style={{ width: '60px', height: '60px' }}>
                                     <i className="fa fa-cubes text-white"></i>
                                 </div>
-                                <h4>Best In Industry</h4>
-                                <p className="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
+                                <h4>Les Meilleurs du Secteur</h4>
+                                <p className="mb-0">Nous offrons des solutions informatiques de qualité, alliant expertise et innovation, pour garantir à nos clients un avantage concurrentiel.</p>
                             </div>
                             <div className="col-12 wow zoomIn" data-wow-delay="0.6s">
                                 <div className="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style={{ width: '60px', height: '60px' }}>
                                     <i className="fa fa-award text-white"></i>
                                 </div>
-                                <h4>Award Winning</h4>
-                                <p className="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
+                                <h4>Récompenses et Distinctions</h4>
+                                <p className="mb-0">Nos services et notre engagement envers l'excellence ont été reconnus par de nombreuses récompenses dans l'industrie.</p>
                             </div>
                         </div>
                     </div>
@@ -254,15 +257,15 @@ export default function Home(){
                                 <div className="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style={{ width: '60px', height: '60px' }}>
                                     <i className="fa fa-users-cog text-white"></i>
                                 </div>
-                                <h4>Professional Staff</h4>
-                                <p className="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
+                                <h4>Équipe Professionnelle</h4>
+                                <p className="mb-0">Notre personnel est composé d'experts hautement qualifiés, dédiés à offrir des solutions adaptées aux besoins spécifiques de chaque client.</p>
                             </div>
                             <div className="col-12 wow zoomIn" data-wow-delay="0.8s">
                                 <div className="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style={{ width: '60px', height: '60px' }}>
                                     <i className="fa fa-phone-alt text-white"></i>
                                 </div>
-                                <h4>24/7 Support</h4>
-                                <p className="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
+                                <h4>Support 24/7</h4>
+                                <p className="mb-0">Nous fournissons une assistance continue, disponible 24 heures sur 24 et 7 jours sur 7, pour répondre à toutes vos questions rapidement et efficacement.</p>
                             </div>
                         </div>
                     </div>
@@ -275,8 +278,8 @@ export default function Home(){
         <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
             <div className="container py-5">
                 <div className="section-title text-center position-relative pb-3 mb-5 mx-auto" style={{ maxWidth: '600px' }}>
-                    <h5 className="fw-bold text-primary text-uppercase">Our Services</h5>
-                    <h1 className="mb-0">Custom IT Solutions for Your Successful Business</h1>
+                    <h5 className="fw-bold text-primary text-uppercase">Nos Services</h5>
+                    <h1 className="mb-0">Des solutions informatiques sur mesure pour le succès de votre entreprise</h1>
                 </div>
                 <div class="row g-5">
     {/* Service: Cyber Security */}
@@ -285,8 +288,9 @@ export default function Home(){
             <div class="service-icon">
                 <i class="fa fa-shield-alt text-white"></i>
             </div>
-            <h4 class="mb-3">Cyber Security</h4>
-            <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
+            <h4 class="mb-3">Cybersécurité
+            </h4>
+            <p class="m-0">Nous protégeons vos données et systèmes contre les menaces avec des solutions de sécurité robustes et efficaces.</p>
             <a class="btn btn-lg btn-primary rounded" href="">
                 <i class="bi bi-arrow-right"></i>
             </a>
@@ -299,8 +303,8 @@ export default function Home(){
             <div class="service-icon">
                 <i class="fa fa-chart-pie text-white"></i>
             </div>
-            <h4 class="mb-3">Data Analytics</h4>
-            <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
+            <h4 class="mb-3">Analyse de Données</h4>
+            <p class="m-0">Exploitez la puissance des données pour prendre des décisions stratégiques grâce à nos services d'analyse avancée.</p>
             <a class="btn btn-lg btn-primary rounded" href="">
                 <i class="bi bi-arrow-right"></i>
             </a>
@@ -313,8 +317,8 @@ export default function Home(){
             <div class="service-icon">
                 <i class="fa fa-code text-white"></i>
             </div>
-            <h4 class="mb-3">Web Development</h4>
-            <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
+            <h4 class="mb-3">Développement Web</h4>
+            <p class="m-0">Nous créons des sites web performants et adaptés à vos besoins, pour renforcer votre présence en ligne.</p>
             <a class="btn btn-lg btn-primary rounded" href="">
                 <i class="bi bi-arrow-right"></i>
             </a>
@@ -327,8 +331,8 @@ export default function Home(){
             <div class="service-icon">
                 <i class="fab fa-android text-white"></i>
             </div>
-            <h4 class="mb-3">Apps Development</h4>
-            <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
+            <h4 class="mb-3">Développement d'Applications</h4>
+            <p class="m-0">Des applications innovantes et intuitives, conçues pour optimiser votre activité et améliorer l'expérience utilisateur.</p>
             <a class="btn btn-lg btn-primary rounded" href="">
                 <i class="bi bi-arrow-right"></i>
             </a>
@@ -341,8 +345,8 @@ export default function Home(){
             <div class="service-icon">
                 <i class="fa fa-search text-white"></i>
             </div>
-            <h4 class="mb3">SEO Optimization</h4>
-            <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
+            <h4 class="mb3">Optimisation SEO</h4>
+            <p class="m-0">Augmentez la visibilité de votre site grâce à nos stratégies de référencement optimisées pour les moteurs de recherche.</p>
             <a class="btn btn-lg btn-primary rounded" href="">
                 <i class="bi bi-arrow-right"></i>
             </a>
@@ -352,8 +356,8 @@ export default function Home(){
     {/* Section: Call Us For Quote */}
     <div id="quote" class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
         <div class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-5">
-            <h3 class="text-white mb-3">Call Us For Quote</h3>
-            <p class="text-white mb-3">Clita ipsum magna kasd rebum at ipsum amet dolor justo dolor est magna stet eirmod</p>
+            <h3 class="text-white mb-3">Appelez-nous pour un devis</h3>
+            <p class="text-white mb-3">Contactez-nous pour obtenir un devis personnalisé et découvrir comment nous pouvons répondre à vos besoins.</p>
             <h2 class="text-white mb-0">+012 345 6789</h2>
         </div>
     </div>
@@ -426,74 +430,168 @@ export default function Home(){
 
 
    {/* Testimonial Start */}
-<div className="container-fluid py-5 wow fadeInUp d-flex" data-wow-delay="0.1s">
-   <div className="container py-5">
-   <div className="section-title text-center position-relative pb-3 mb-4 mx-auto" style={{ maxWidth: '600px' }}>
-      <h5 className="fw-bold text-primary text-uppercase">Testimonial</h5>
-      <h1 className="mb-0">What Our Clients Say About Our Digital Services</h1>
-    </div>
-    <div className="testimonial-carousel wow fadeInUp"  data-wow-delay="0.6s">
-       <div className="testimonial-item bg-light my-4">
-        <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-          <img className="img-fluid rounded" src="img/testimonial-1.jpg" style={{ width: '60px', height: '60px' }} alt="Client 1" />
-          <div className="ps-4">
-            <h4 className="text-primary mb-1">Client Name</h4>
-            <small className="text-uppercase">Profession</small>
-          </div>
-        </div>
-        <div className="pt-4 pb-5 px-5">
-          Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam.
-        </div>
-      </div>
-    <div className="testimonial-item bg-light my-4">
-    
-         <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-          <img className="img-fluid rounded" src="img/testimonial-2.jpg" style={{ width: '60px', height: '60px' }} alt="Client 2" />
-          <div className="ps-4">
-            <h4 className="text-primary mb-1">Client Name</h4>
-            <small className="text-uppercase">Profession</small>
-          </div>
-        </div>
-        <div className="pt-4 pb-5 px-5">
-          Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam.
-        </div>
-      </div>
+   <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div className="container py-5">
+                <div className="section-title text-center position-relative pb-3 mb-4 mx-auto" style={{ maxWidth: '600px' }}>
+                    <h5 className="fw-bold text-primary text-uppercase">Testimonial</h5>
+                    <h1 className="mb-0">What Our Clients Say About Our Digital Services</h1>
+                </div>
 
-      <div className="testimonial-item bg-light my-4">
-        <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-          <img className="img-fluid rounded" src="img/testimonial-3.jpg" style={{ width: '60px', height: '60px' }} alt="Client 3" />
-          <div className="ps-4">
-            <h4 className="text-primary mb-1">Client Name</h4>
-            <small className="text-uppercase">Profession</small>
-          </div>
+                {/* Owl Carousel Start */}<div>
+                <OwlCarousel 
+                    className="owl-theme testimonial-carousel wow fadeInUp" 
+                    items={3} 
+                    loop 
+                    // margin={10} 
+                    // nav 
+                    data-wow-delay="0.6s"
+                >
+                    
+                    <div className="testimonial-item bg-light my-4 border">
+                        <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                            <img className="img-fluid rounded" src="img/testimonial-1.png" alt="Client 1" style={{ width: '80px', height: '80px' }} />
+                            <div className="ps-4">
+                                <h4 className="text-primary mb-1">Centre elite physio </h4>
+                                <small className="text-uppercase">Kinésithérapeute · Thérapeute · Médecine et santé</small>
+                            </div>
+                        </div>
+                        <div className="pt-4 pb-5 px-5">
+                            Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam.
+                        </div>
+                    </div>
+                    <div className="testimonial-item bg-light my-4 border">
+                        <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                            <img className="img-fluid rounded" src="img/testimonial-2.jpg" alt="Client 2" style={{ width: '80px', height: '80px' }} />
+                            <div className="ps-4">
+                                <h4 className="text-primary mb-1">Carré Rouge Marrakech</h4>
+                                <small className="text-uppercase">Restaurant</small>
+                            </div>
+                        </div>
+                        <div className="pt-4 pb-5 px-5">
+                            Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam.
+                        </div>
+                    </div>
+                    <div className="testimonial-item bg-light my-4 border">
+                        <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                            <img className="img-fluid rounded" src="img/testimonial-3.jpg" alt="Client 3" style={{ width: '80px', height: '80px' }} />
+                            <div className="ps-4">
+                                <h4 className="text-primary mb-1">Beauty MED Center MAROC </h4>
+                                <small className="text-uppercase">Soins dermotechnology.</small>
+                            </div>
+                        </div>
+                        <div className="pt-4 pb-5 px-5">
+                            Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam.
+                        </div>
+                    </div>
+                    <div className="testimonial-item bg-light my-4 border">
+                        <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                            <img className="img-fluid rounded" src="img/testimonial-4.jpg" alt="Client 4" style={{ width: '80px', height: '80px' }} />
+                            <div className="ps-4">
+                                <h4 className="text-primary mb-1">Centre Epilova </h4>
+                                <small className="text-uppercase">Service d’épilation au laser · Service de soins de la peau</small>
+                            </div>
+                        </div>
+                        <div className="pt-4 pb-5 px-5">
+                            Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam.
+                        </div>
+                    </div>
+                    <div className="testimonial-item bg-light my-4 border">
+                        <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                            <img className="img-fluid rounded" src="img/testimonial-5.jpg" alt="Client 4" style={{ width: '80px', height: '80px' }} />
+                            <div className="ps-4">
+                                <h4 className="text-primary mb-1">Sofa Design  </h4>
+                                <small className="text-uppercase">Magasin de vente des articles de décoration</small>
+                            </div>
+                        </div>
+                        <div className="pt-4 pb-5 px-5">
+                            Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam.
+                        </div>
+                    </div>
+                    <div className="testimonial-item bg-light my-4 border">
+                        <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                            <img className="img-fluid rounded" src="img/testimonial-6.jpg" alt="Client 4" style={{ width: '80px', height: '80px' }} />
+                            <div className="ps-4">
+                                <h4 className="text-primary mb-1">Nouni Marrakech </h4>
+                                <small className="text-uppercase">Magasin de chaussures</small>
+                            </div>
+                        </div>
+                        <div className="pt-4 pb-5 px-5">
+                            Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam.
+                        </div>
+                    </div>
+                    <div className="testimonial-item bg-light my-4 border">
+                        <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                            <img className="img-fluid rounded" src="img/testimonial-7.jpg" alt="Client 4" style={{ width: '80px', height: '80px' }} />
+                            <div className="ps-4">
+                                <h4 className="text-primary mb-1">Cossmy </h4>
+                                <small className="text-uppercase">Magasin de vente des produits cosmetiques</small>
+                            </div>
+                        </div>
+                        <div className="pt-4 pb-5 px-5">
+                            Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam.
+                        </div>
+                    </div>
+                    <div className="testimonial-item bg-light my-4 border">
+                        <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                            <img className="img-fluid rounded" src="img/testimonial-8.jpg" alt="Client 4" style={{ width: '80px', height: '80px' }} />
+                            <div className="ps-4">
+                                <h4 className="text-primary mb-1">solo_design_maroc </h4>
+                                <small className="text-uppercase">Innovateur en mobilier et décoration</small>
+                            </div>
+                        </div>
+                        <div className="pt-4 pb-5 px-5">
+                            Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam.
+                        </div>
+                    </div>
+                    <div className="testimonial-item bg-light my-4 border">
+                        <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                            <img className="img-fluid rounded" src="img/testimonial-9.jpg" alt="Client 4" style={{ width: '80px', height: '80px' }} />
+                            <div className="ps-4">
+                                <h4 className="text-primary mb-1">Airlod</h4>
+                                <small className="text-uppercase">Plateforme de carte de visite numérique</small>
+                            </div>
+                        </div>
+                        <div className="pt-4 pb-5 px-5">
+                            Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam.
+                        </div>
+                    </div>
+                    <div className="testimonial-item bg-light my-4 border">
+                        <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                            <img className="img-fluid rounded" src="img/testimonial-10.jpg" alt="Client 4" style={{ width: '80px', height: '80px' }} />
+                            <div className="ps-4">
+                                <h4 className="text-primary mb-1">The selfie box Maroc </h4>
+                                <small className="text-uppercase">Location de photobooths ...</small>
+                            </div>
+                        </div>
+                        <div className="pt-4 pb-5 px-5">
+                            Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam.
+                        </div>
+                    </div>
+                  
+                    <div className="testimonial-item bg-light my-4 border">
+                        <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                            <img className="img-fluid rounded" src="img/testimonial-11.jpg" alt="Client 4" style={{ width: '80px', height: '80px' }} />
+                            <div className="ps-4">
+                                <h4 className="text-primary mb-1">Secret Studio Marrakech </h4>
+                                <small className="text-uppercase">Services événementiels</small>
+                            </div>
+                        </div>
+                        <div className="pt-4 pb-5 px-5">
+                            Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam.
+                        </div>
+                    </div>
+                    
+                </OwlCarousel></div>
+                {/* Owl Carousel End */}
+            </div>
         </div>
-        <div className="pt-4 pb-5 px-5">
-          Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam.
-        </div>
-      </div>
-      <div className="testimonial-item bg-light my-4">
-        <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-          <img className="img-fluid rounded" src="img/testimonial-4.jpg" style={{ width: '60px', height: '60px' }} alt="Client 4" />
-          <div className="ps-4">
-            <h4 className="text-primary mb-1">Client Name</h4>
-            <small className="text-uppercase">Profession</small>
-          </div>
-        </div>
-        <div className="pt-4 pb-5 px-5">
-          Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam.
-        </div>
-      </div>
-    </div> 
-  </div> 
- 
-</div>
 {/* Testimonial End */}
 
 
 
 
         {/* <!-- Team Start --> */}
-        <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        {/* <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
             <div className="container py-5">
                 <div className="section-title text-center position-relative pb-3 mb-5 mx-auto" style={{ maxWidth: '600px' }}>
                     <h5 className="fw-bold text-primary text-uppercase">Team Members</h5>
@@ -553,7 +651,7 @@ export default function Home(){
                     </div>
                 </div>
             </div>
-        </div>
+        </div> */}
         {/* <!-- Team End --> */}
 
 
@@ -576,8 +674,8 @@ export default function Home(){
                                     <small className="me-3"><i className="far fa-user text-primary me-2"></i>John Doe</small>
                                     <small><i className="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
                                 </div>
-                                <h4 className="mb-3">How to build a website</h4>
-                                <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
+                                <h4 className="mb-3">The Future of Digital Marketing: Trends and Strategies for 2024</h4>
+                                <p>Emerging Digital Marketing Trends in 2024 As we approach 2024, the digital marketing landscape is poised for significant transformation driven…</p>
                                 <a className="text-uppercase" href="">Read More <i className="bi bi-arrow-right"></i></a>
                             </div>
                         </div>
@@ -593,8 +691,8 @@ export default function Home(){
                                     <small className="me-3"><i className="far fa-user text-primary me-2"></i>John Doe</small>
                                     <small><i className="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
                                 </div>
-                                <h4 className="mb-3">How to build a website</h4>
-                                <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
+                                <h4 className="mb-3">Harnessing the Power of Social Media for Business Growth</h4>
+                                <p>Dwelling and speedily ignorant any steepest. Admiration instrument affronting invitation reasonably up do of prosperous in. Shy saw declared age…</p>
                                 <a className="text-uppercase" href="">Read More <i className="bi bi-arrow-right"></i></a>
                             </div>
                         </div>
@@ -610,8 +708,9 @@ export default function Home(){
                                     <small className="me-3"><i className="far fa-user text-primary me-2"></i>John Doe</small>
                                     <small><i className="far fa-calendar-alt text-primary me-2"></i>01 Jan, 2045</small>
                                 </div>
-                                <h4 className="mb-3">How to build a website</h4>
-                                <p>Dolor et eos labore stet justo sed est sed sed sed dolor stet amet</p>
+                                <h4 className="mb-3">The Art of Negotiation: Tips for Successful Business Deals
+                                </h4>
+                                <p>Dwelling and speedily ignorant any steepest. Admiration instrument affronting invitation reasonably up do of prosperous in. Shy saw declared age…</p>
                                 <a className="text-uppercase" href="">Read More <i className="bi bi-arrow-right"></i></a>
                             </div>
                         </div>
@@ -648,7 +747,7 @@ export default function Home(){
                     <div className="col-lg-4 col-md-6 footer-about">
                         <div className="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
                             <a href="index.html" className="navbar-brand">
-                                <h1 className="m-0 text-white"><i className="fa fa-user-tie me-2"></i>Startup</h1>
+                                <h1 className="m-0 text-white"><i className="fa fa-user-tie me-2"></i>Digilik</h1>
                             </a>
                             <p className="mt-3 mb-4">Lorem diam sit erat dolor elitr et, diam lorem justo amet clita stet eos sit. Elitr dolor duo lorem, elitr clita ipsum sea. Diam amet erat lorem stet eos. Diam amet et kasd eos duo.</p>
                             <form action="">
@@ -690,7 +789,7 @@ export default function Home(){
                                 </div>
                                 <div className="link-animated d-flex flex-column justify-content-start">
                                     <a className="text-light mb-2" href="#"><i className="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                                    <a className="text-light mb-2" href="#"><i className="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                                    <a className="text-light mb-2" href="#"><i className="bi bi-arrow-right text-primary me-2"></i>A propos</a>
                                     <a className="text-light mb-2" href="#"><i className="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
                                     <a className="text-light mb-2" href="#"><i className="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
                                     <a className="text-light mb-2" href="#"><i className="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
@@ -703,7 +802,7 @@ export default function Home(){
                                 </div>
                                 <div className="link-animated d-flex flex-column justify-content-start">
                                     <a className="text-light mb-2" href="#"><i className="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                                    <a className="text-light mb-2" href="#"><i className="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                                    <a className="text-light mb-2" href="#"><i className="bi bi-arrow-right text-primary me-2"></i>A propos</a>
                                     <a className="text-light mb-2" href="#"><i className="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
                                     <a className="text-light mb-2" href="#"><i className="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
                                     <a className="text-light mb-2" href="#"><i className="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
