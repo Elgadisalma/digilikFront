@@ -60,7 +60,9 @@ export default function Home(){
         <div className="container-fluid position-relative p-0">
             <nav className="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
                 <a href="index.html" className="navbar-brand p-0">
-                    <h1 className="m-0"><i className="fa fa-user-tie me-2"></i>Digilik</h1>
+                    <h1 className="m-0">
+                        {/* <i className="fa fa-user-tie me-2"></i> */}
+                        Digilik</h1>
                 </a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span className="fa fa-bars"></span>
@@ -86,8 +88,8 @@ export default function Home(){
                             <div className="p-3" style={{ maxWidth: '900px' }}>
                                 <h5 className="text-white text-uppercase mb-3 animated slideInDown">Business Excellence</h5>
                                 <h1 className="display-1 text-white mb-md-4 animated zoomIn">Naviguer dans le paysage des affaires</h1>
-                                <a href="quote.html" className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Free Quote</a>
-                                <a href="#" className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact Us</a>
+                                {/* <a href="quote.html" className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Free Quote</a> */}
+                                <a href="#about-us" className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact Us</a>
                             </div>
                         </div>
                     </div>
@@ -97,8 +99,8 @@ export default function Home(){
                             <div className="p-3" style={{ maxWidth: '900px' }}>
                                 <h5 className="text-white text-uppercase mb-3 animated slideInDown">Business Growth</h5>
                                 <h1 className="display-1 text-white mb-md-4 animated zoomIn">Tracer sa voie en affaires</h1>
-                                <a href="quote.html" className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Free Quote</a>
-                                <a href="#" className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact Us</a>
+                                <a href="#contact-us" className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Contact us</a>
+                                {/* <a href="#" className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact Us</a> */}
                             </div>
                         </div>
                     </div>
@@ -207,7 +209,7 @@ export default function Home(){
                                 <h4 className="text-primary mb-0">+012 345 6789</h4>
                             </div>
                         </div>
-                        <a href="quote.html" className="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Request A Quote</a>
+                        {/* <a href="quote.html" className="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Request A Quote</a> */}
                     </div>
                     <div className="col-lg-5" style={{ minHeight: '500px' }}>
                         <div className="position-relative h-100">
@@ -367,30 +369,32 @@ export default function Home(){
         </div>
         {/* <!-- Service End --> */}
 
-        {/* <!-- Quote Start --> */}
+       {/* <!-- Devis Début --> */}
         <div id="contact-us" className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
             <div className="container py-5">
                 <div className="row g-5">
                     <div className="col-lg-7">
                         <div className="section-title position-relative pb-3 mb-5">
-                            <h5 className="fw-bold text-primary text-uppercase">Request A Quote</h5>
-                            <h1 className="mb-0">Need A Free Quote? Please Feel Free to Contact Us</h1>
+                            <h5 className="fw-bold text-primary text-uppercase">Demande De Devis</h5>
+                            <h1 className="mb-0">Besoin d'un devis gratuit ? N'hésitez pas à nous contacter</h1>
                         </div>
                         <div className="row gx-3">
                             <div className="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
-                                <h5 className="mb-4"><i className="fa fa-reply text-primary me-3"></i>Reply within 24 hours</h5>
+                                <h5 className="mb-4"><i className="fa fa-reply text-primary me-3"></i>Réponse sous 24 heures</h5>
                             </div>
                             <div className="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
-                                <h5 className="mb-4"><i className="fa fa-phone-alt text-primary me-3"></i>24 hrs telephone support</h5>
+                                <h5 className="mb-4"><i className="fa fa-phone-alt text-primary me-3"></i>Assistance téléphonique 24h/24</h5>
                             </div>
                         </div>
-                        <p className="mb-4">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
+                        <p className="mb-4">
+                            Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.
+                        </p>
                         <div className="d-flex align-items-center mt-2 wow zoomIn" data-wow-delay="0.6s">
                             <div className="bg-primary d-flex align-items-center justify-content-center rounded" style={{ width: '60px', height: '60px' }}>
                                 <i className="fa fa-phone-alt text-white"></i>
                             </div>
                             <div className="ps-4">
-                                <h5 className="mb-2">Call to ask any question</h5>
+                                <h5 className="mb-2">Appelez pour poser une question</h5>
                                 <h4 className="text-primary mb-0">+012 345 6789</h4>
                             </div>
                         </div>
@@ -400,14 +404,14 @@ export default function Home(){
                             <form>
                                 <div className="row g-3">
                                     <div className="col-xl-12">
-                                        <input type="text" className="form-control bg-light border-0" placeholder="Your Name" style={{ height: '55px' }} />
+                                        <input type="text" className="form-control bg-light border-0" placeholder="Votre Nom" style={{ height: '55px' }} />
                                     </div>
                                     <div className="col-12">
-                                        <input type="email" className="form-control bg-light border-0" placeholder="Your Email" style={{ height: '55px' }} />
+                                        <input type="email" className="form-control bg-light border-0" placeholder="Votre Email" style={{ height: '55px' }} />
                                     </div>
                                     <div className="col-12">
                                         <select className="form-select bg-light border-0" style={{ height: '55px' }}>
-                                            <option selected>Select A Service</option>
+                                            <option selected>Choisissez un service</option>
                                             <option value="1">Service 1</option>
                                             <option value="2">Service 2</option>
                                             <option value="3">Service 3</option>
@@ -417,7 +421,7 @@ export default function Home(){
                                         <textarea className="form-control bg-light border-0" rows="3" placeholder="Message"></textarea>
                                     </div>
                                     <div className="col-12">
-                                        <button className="btn btn-dark w-100 py-3" type="submit">Request A Quote</button>
+                                        <button className="btn btn-dark w-100 py-3" type="submit">Demander Un Devis</button>
                                     </div>
                                 </div>
                             </form>
@@ -426,7 +430,8 @@ export default function Home(){
                 </div>
             </div>
         </div>
-        {/* <!-- Quote End --> */}
+        {/* <!-- Devis Fin --> */}
+
 
 
    {/* Testimonial Start */}
@@ -749,7 +754,10 @@ export default function Home(){
                             <a href="index.html" className="navbar-brand">
                                 <h1 className="m-0 text-white"><i className="fa fa-user-tie me-2"></i>Digilik</h1>
                             </a>
-                            <p className="mt-3 mb-4">Lorem diam sit erat dolor elitr et, diam lorem justo amet clita stet eos sit. Elitr dolor duo lorem, elitr clita ipsum sea. Diam amet erat lorem stet eos. Diam amet et kasd eos duo.</p>
+                            <p className="mt-3 mb-4">
+                            Rejoignez notre communauté et restez informé des dernières tendances digitales, des conseils exclusifs et des offres spéciales. 
+                            Abonnez-vous à notre newsletter pour ne rien manquer .
+                            </p>
                             <form action="">
                                 <div className="input-group">
                                     <input type="text" className="form-control border-white p-3" placeholder="Your Email" />
@@ -765,8 +773,8 @@ export default function Home(){
                                     <h3 className="text-light mb-0">Get In Touch</h3>
                                 </div>
                                 <div className="d-flex mb-2">
-                                    <i className="bi bi-geo-alt text-primary me-2"></i>
-                                    <p className="mb-0">123 Street, New York, USA</p>
+                                    {/* <i className="bi bi-geo-alt text-primary me-2"></i>
+                                    <p className="mb-0">123 Street, New York, USA</p> */}
                                 </div>
                                 <div className="d-flex mb-2">
                                     <i className="bi bi-envelope-open text-primary me-2"></i>
@@ -789,14 +797,13 @@ export default function Home(){
                                 </div>
                                 <div className="link-animated d-flex flex-column justify-content-start">
                                     <a className="text-light mb-2" href="#"><i className="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                                    <a className="text-light mb-2" href="#"><i className="bi bi-arrow-right text-primary me-2"></i>A propos</a>
-                                    <a className="text-light mb-2" href="#"><i className="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                                    <a className="text-light mb-2" href="#"><i className="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
-                                    <a className="text-light mb-2" href="#"><i className="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                                    <a className="text-light" href="#"><i className="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                                    <a className="text-light mb-2" href="#about-us"><i className="bi bi-arrow-right text-primary me-2"></i>A propos</a>
+                                    <a className="text-light mb-2" href="#choose-us"><i className="bi bi-arrow-right text-primary me-2"></i>Why Choose Us</a>
+                                    <a className="text-light mb-2" href="#contact-us"><i className="bi bi-arrow-right text-primary me-2"></i>Contact us</a>
+                                   
                                 </div>
                             </div>
-                            <div className="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            {/* <div className="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
                                 <div className="section-title section-title-sm position-relative pb-3 mb-4">
                                     <h3 className="text-light mb-0">Popular Links</h3>
                                 </div>
@@ -808,7 +815,7 @@ export default function Home(){
                                     <a className="text-light mb-2" href="#"><i className="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
                                     <a className="text-light" href="#"><i className="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
@@ -819,8 +826,7 @@ export default function Home(){
                 <div className="row justify-content-end">
                     <div className="col-lg-8 col-md-6">
                         <div className="d-flex align-items-center justify-content-center" style={{ height: '75px' }}>
-                            <p className="mb-0">&copy; <a className="text-white border-bottom" href="#">Your Site Name</a>. All Rights Reserved. 
-                            Designed by <a className="text-white border-bottom" href="https://htmlcodex.com">HTML Codex</a></p>
+                            <p className="mb-0">&copy; <a className="text-white border-bottom" href="#">2024 Digilik Agency</a>. All Rights Reserved. </p>
                         </div>
                     </div>
                 </div>
